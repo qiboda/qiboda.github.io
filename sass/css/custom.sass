@@ -1,0 +1,5 @@
+$header-colors: ( 1: #e63946, 2: #2a9d8f, 3: #f4a261, 4: #e9c46a, 5: #457b9d, 6: #1d3557)
+
+@for $i from 1 through 6
+  h#{$i}
+    color: map-get($header-colors, $i)

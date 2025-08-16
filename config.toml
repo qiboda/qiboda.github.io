@@ -9,7 +9,7 @@ build_search_index = true
 
 # TABI theme
 theme = "tabi"
-title = "looper Blog"
+title = "Looper's Blog"
 # TODO: 目前不支持，等待官方更新。
 # default_language = "zh-Hans"
 
@@ -24,6 +24,8 @@ highlight_theme = "css"
 [extra]
 # Put all your custom variables here
 toc = true
+skin = "blue"
+stylesheets = ["css/custom.css"]
 
 [search]
 index_format = "elasticlunr_json" # Or the less efficient "elasticlunr_javascript".
