@@ -7,9 +7,13 @@ compile_sass = true
 # Whether to build a search index to be used later on by a JavaScript library
 build_search_index = true
 
+# TABI theme
 theme = "tabi"
-
 title = "looper Blog"
+# TODO: 目前不支持，等待官方更新。
+# default_language = "zh-Hans"
+
+taxonomies = [{name = "tags", feed = true}]
 
 [markdown]
 # Whether to do syntax highlighting
@@ -19,3 +23,11 @@ highlight_theme = "css"
 
 [extra]
 # Put all your custom variables here
+toc = true
+
+[search]
+index_format = "elasticlunr_json" # Or the less efficient "elasticlunr_javascript".
+include_title = true
+include_description = true
+include_path = true
+include_content = true
